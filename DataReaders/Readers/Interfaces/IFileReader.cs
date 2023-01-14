@@ -1,6 +1,3 @@
-using System;
-using System.IO;
-
 namespace DataReaders.Readers.Interfaces
 {
     public interface IFileReader<T>

@@ -9,6 +9,7 @@
     <ItemGroup>
       <PackageReference Include="ExcelDataReader" Version="3.7.0-develop00310" />
       <PackageReference Include="ExcelDataReader.DataSet" Version="3.7.0-develop00310" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     </ItemGroup>
 
 </Project>

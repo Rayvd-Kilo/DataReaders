@@ -1,5 +1,4 @@
 using System.Data;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 using DataReaders.Readers.Interfaces;
@@ -21,7 +20,9 @@ namespace DataReaders.Readers.RegexReaders
 
                 var result = results.FirstOrDefault(x => x.Value != string.Empty)?.ToString();
 
-                return result;
+                if (result != null) return result;
+                
+                return default!;
             });
         }
     }
