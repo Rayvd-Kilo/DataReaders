@@ -5,9 +5,9 @@ using DataReaders.Readers.Interfaces;
 
 namespace DataReaders.Readers.RegexReaders
 {
-    public class FullNameReader : BaseReader<string>
+    public class FullNameRegexTableReader : BaseRegexTableReader<string>
     {
-        public FullNameReader(ITableReader<string> tableReader) : base(tableReader,
+        public FullNameRegexTableReader(ITableReader<string> tableReader) : base(tableReader,
             "[А-ЯЁ][а-яё]*.[А-ЯЁ][.][А-ЯЁ][.]") { }
         
         public override string[] ReadData(DataTable table)

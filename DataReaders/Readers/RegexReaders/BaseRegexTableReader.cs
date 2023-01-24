@@ -4,13 +4,13 @@ using DataReaders.Readers.Interfaces;
 
 namespace DataReaders.Readers.RegexReaders
 {
-    public abstract class BaseReader<T>
+    public abstract class BaseRegexTableReader<T>
     {
         protected readonly string RegexPatten;
         
         protected readonly ITableReader<T> TableReader;
 
-        protected BaseReader(ITableReader<T> tableReader, string regexPatten)
+        protected BaseRegexTableReader(ITableReader<T> tableReader, string regexPatten)
         {
             TableReader = tableReader;
             
