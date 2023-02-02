@@ -5,10 +5,10 @@ using DataReaders.Readers.Interfaces;
 
 namespace DataReaders.Readers.RegexReaders
 {
-    public class FullNameRegexTableReader : BaseRegexTableReader<string>
+    public class UniqStringsRegexTableReader : BaseRegexTableReader<string>
     {
-        public FullNameRegexTableReader(ITableReader<string> tableReader) : base(tableReader,
-            "[А-ЯЁ][а-яё]*.[А-ЯЁ][.][А-ЯЁ][.]") { }
+        public UniqStringsRegexTableReader(ITableReader<string> tableReader, string regex) : base(tableReader,
+            regex) { }
         
         public override string[] ReadData(DataTable table)
         {
