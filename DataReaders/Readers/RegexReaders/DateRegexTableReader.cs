@@ -11,7 +11,7 @@ namespace DataReaders.Readers.RegexReaders
     public class DateRegexTableReader : BaseRegexTableReader<DataInMatrix<string>>
     {
         public DateRegexTableReader(ITableReader<DataInMatrix<string>> tableReader) : base(tableReader,
-            "^[А-Я]*[ ]*[–|-][ ][0-9]*[ ][А-Я]*") {}
+            "^[А-Я]*[ ]*[–|-][ ]*[0-9]*[ ][А-Я]*") {}
 
         public override DataInMatrix<string>[] ReadData(DataTable table)
         {
