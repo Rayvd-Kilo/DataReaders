@@ -15,4 +15,9 @@ public class BaseRegexReader
     {
         return _regex.Match(inputValue);
     }
+    
+    public MatchCollection GetMatches(string inputValue)
+    {
+        return _regex.Matches(inputValue);
+    }
 }
