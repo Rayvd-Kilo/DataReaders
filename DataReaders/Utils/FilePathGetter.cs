@@ -12,6 +12,6 @@ public static class FilePathGetter
 
         path = path!.Remove(0, 6);
 
-        return $"{path}/{fileName}";
+        return $"{path}\\{fileName}";
     }
 }
